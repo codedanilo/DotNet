@@ -1,0 +1,14 @@
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\bin\Debug\net7.0\semana02.exe
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\bin\Debug\net7.0\semana02.deps.json
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\bin\Debug\net7.0\semana02.runtimeconfig.json
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\bin\Debug\net7.0\semana02.dll
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\bin\Debug\net7.0\semana02.pdb
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.AssemblyInfoInputs.cache
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.AssemblyInfo.cs
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.csproj.CoreCompileInputs.cache
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.dll
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\refint\semana02.dll
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.pdb
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\semana02.genruntimeconfig.cache
+C:\Users\Danilo\Documents\RESIDENCIATIC18\DotNet\dotnet\semana02\obj\Debug\net7.0\ref\semana02.dll
