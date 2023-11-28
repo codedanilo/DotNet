@@ -17,12 +17,13 @@ namespace GerenciamentoEstoque
             bool continuar = true;
             while (continuar)
             {
-                Console.WriteLine("========= Sistema de Gerenciamento de Estoque =========");
-                Console.WriteLine("1 - Cadastrar Produto");
-                Console.WriteLine("2 - Consultar Produto por Código");
-                Console.WriteLine("3 - Atualizar Estoque");
-                Console.WriteLine("4 - Gerar Relatórios");
-                Console.WriteLine("5 - Sair");
+                Console.WriteLine("========= Gerenciamento de Estoque =========");
+                Console.WriteLine("|        1 - Cadastrar Produto             |");
+                Console.WriteLine("|        2 - Consultar Produto por Código  |");
+                Console.WriteLine("|        3 - Atualizar Estoque             |");
+                Console.WriteLine("|        4 - Gerar Relatórios              |");
+                Console.WriteLine("|        5 - Sair                          |");
+                Console.WriteLine("|==========================================|");
                 Console.Write("Escolha uma opção: ");
 
                 if (int.TryParse(Console.ReadLine(), out int opcao))
@@ -252,12 +253,13 @@ namespace GerenciamentoEstoque
 
         static void GerarRelatorios()
         {
-            Console.WriteLine("======= Relatórios =======");
-            Console.WriteLine("1 - Lista de produtos com quantidade em estoque abaixo de um limite");
-            Console.WriteLine("2 - Lista de produtos com valor entre um mínimo e um máximo");
-            Console.WriteLine("3 - Valor total do estoque e valor total de cada produto");
+            Console.WriteLine("========================== Relatórios ================================");
+            Console.WriteLine("| 1 - Lista de produtos com quantidade em estoque abaixo de um limite|");
+            Console.WriteLine("| 2 - Lista de produtos com valor entre um mínimo e um máximo        |");
+            Console.WriteLine("| 3 - Valor total do estoque e valor total de cada produto           |");
+            Console.WriteLine("|====================================================================|");
             Console.Write("Escolha um relatório para gerar: ");
-
+           
             if (int.TryParse(Console.ReadLine(), out int opcao))
             {
                 switch (opcao)
