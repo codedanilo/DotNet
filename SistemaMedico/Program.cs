@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 
+namespace SistemaMedico;
 public class Pessoa
 {
-    public string Nome { get; set; }
+    public string? Nome { get; set; }
     public DateTime DataNascimento { get; set; }
-    public string CPF { get; set; }
+    public string? CPF { get; set; }
 }
 
 public class Medico : Pessoa
 {
-    public string CRM { get; set; }
+    public string? CRM { get; set; }
 }
 
 public class Paciente : Pessoa
@@ -19,6 +20,38 @@ public class Paciente : Pessoa
     public string? Sexo { get; set; }
     public string? Sintomas { get; set; }
 }
+
+public static bool ValidarCPF(string cpf)
+{
+    if (cpf.Length != 11 || !cpf.All(char.IsDigit))
+    {
+        return false;
+    }
+
+    int[] multiplicadoresPrimeiroDigito = { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+    int[] multiplicadoresSegundoDigito = { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+
+    string cpfSemDigitos = cpf.Substring(0, 9);
+
+    int CalculaDigito(string cpfParcial, int[] multiplicadores)
+    {
+        int soma = 0;
+        for (int i = 0; i < cpfParcial.Length; i++)
+        {
+            soma += int.Parse(cpfParcial[i].ToString()) * multiplicadores[i];
+        }
+
+        int resto = soma % 11;
+        return resto < 2 ? 0 : 11 - resto;
+    }
+
+    int primeiroDigito = CalculaDigito(cpfSemDigitos, multiplicadoresPrimeiroDigito);
+    cpfSemDigitos += primeiroDigito;
+    int segundoDigito = CalculaDigito(cpfSemDigitos, multiplicadoresSegundoDigito);
+
+    return cpf.EndsWith($"{primeiroDigito}{segundoDigito}");
+}
+
 
 class Program
 {
@@ -104,3 +137,4 @@ class Program
         }
     }
 }
+
